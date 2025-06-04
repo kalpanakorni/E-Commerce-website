@@ -1,0 +1,25 @@
+/* Product Card Custom Sizing */
+#products .custom-product-card {
+  width: 320px; /* Set your preferred width */
+  height: 420px; /* Set your preferred height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+#products .custom-product-card img {
+  width: 280px;   /* Set your preferred image width */
+  height: 280px;  /* Set your preferred image height */
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+@media (max-width: 1024px) {
+  #products .custom-product-card {
+    width: 100%;
+    height: auto;
+  }
+  #products .custom-product-card img {
+    width: 100%;
+    height: 200px;
+  }
+}
